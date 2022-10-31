@@ -3,9 +3,9 @@ package alghorithm;
 import java.util.ArrayList;
 import java.util.List;
 
+// Used to determine if both endpoints belongs to one set (if so, there is a loop)
 public class DisjointSet {
     private int parentNode;
-    private int rank;
 
     DisjointSet(Integer parent) {
         setParentNode(parent);
