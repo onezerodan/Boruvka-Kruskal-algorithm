@@ -47,12 +47,12 @@ public class Operations {
         Integer rootSrc = find(src);
         Integer rootDst = find(dst);
 
-        // If both endpoints of one edge belongs to the same set ->loop detected
+        // If both endpoints of one edge belongs to the same set -> loop detected
         if (rootSrc.equals(rootDst)) {
             return true;
         }
         // If loop not detected
-        union(src, dst);
+        union(rootSrc, rootDst);
         return false;
     }
 }
